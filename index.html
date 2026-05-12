@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje Aplikacje</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg, #141e30, #243b55);
+        min-height:100vh;
+        color:white;
+        padding:40px;
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:40px;
+        font-size:48px;
+    }
+
+    .apps{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+        gap:25px;
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .app{
+        background: rgba(255,255,255,0.08);
+        border-radius:20px;
+        padding:30px;
+        text-align:center;
+        transition:0.3s;
+        backdrop-filter: blur(10px);
+        border:1px solid rgba(255,255,255,0.15);
+    }
+
+    .app:hover{
+        transform: translateY(-10px) scale(1.03);
+        background: rgba(255,255,255,0.15);
+    }
+
+    .app img{
+        width:80px;
+        height:80px;
+        margin-bottom:20px;
+    }
+
+    .app h2{
+        margin-bottom:15px;
+    }
+
+    .app a{
+        display:inline-block;
+        text-decoration:none;
+        background:#00bfff;
+        color:white;
+        padding:12px 24px;
+        border-radius:10px;
+        transition:0.3s;
+    }
+
+    .app a:hover{
+        background:#0099cc;
+    }
+</style>
+</head>
+<body>
+
+<h1>Moje Aplikacje</h1>
+
+<div class="apps">
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        <h2>YouTube</h2>
+        <a href="https://youtube.com" target="_blank">Otwórz</a>
+    </div>
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify">
+        <h2>Spotify</h2>
+        <a href="https://spotify.com" target="_blank">Otwórz</a>
+    </div>
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732228.png" alt="Netflix">
+        <h2>Netflix</h2>
+        <a href="https://netflix.com" target="_blank">Otwórz</a>
+    </div>
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        <h2>Discord</h2>
+        <a href="https://discord.com" target="_blank">Otwórz</a>
+    </div>
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <h2>Instagram</h2>
+        <a href="https://instagram.com" target="_blank">Otwórz</a>
+    </div>
+
+    <div class="app">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub">
+        <h2>GitHub</h2>
+        <a href="https://github.com" target="_blank">Otwórz</a>
+    </div>
+
+</div>
+<title>NovaHub</title>
+</body>
+</html>
